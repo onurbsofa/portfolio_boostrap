@@ -176,21 +176,29 @@
 
 
 /* presentacion */
-.site-main .about-area{
+
+
+ .about-area{
     padding: 8rem 5rem;
+  
 }
 
-.site-main .about-area .about-title h2 > span{
+.about-area .about-title h2 > span{
     display: block;
-    font: normal bold 49px/ 60px var(--roboto);
+    font: normal bold 49px;
     letter-spacing: 21px;
 }
 
-.site-main .about-area .about-title .paragraph > p{
+.about-area .about-title .paragraph > p{
     padding: .4rem 0;
 }
 
- /*  formulario de contacto */
+.footer .border-highlight {
+  border-top: 1px solid var(--primary-color-highlight);
+}
+
+
+/*  formulario de contacto */
 .contacto_encabezado h1 p{
     margin: auto;
     padding: auto;
@@ -226,3 +234,62 @@ input, textarea{
 .center-content{
     text-align: center;
 } 
+
+
+
+
+#nuestros-programas{
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container{
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p{
+  display: none;
+}
+
+#nuestros-programas .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("media/front-end.jpg");
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("media/python.jpg");
+
+}
